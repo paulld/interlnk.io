@@ -1,25 +1,60 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+// Import company logos
+import fedexLogo from "@/assets/logos/fedex-logo.png";
+import upsLogo from "@/assets/logos/ups-logo.png";
+import dhlLogo from "@/assets/logos/dhl-logo.png";
+import shopifyLogo from "@/assets/logos/shopify-logo.png";
+import amazonLogo from "@/assets/amazon-logo.png";
+import netSuiteLogo from "@/assets/logos/netsuite-logo.png";
+import sapLogo from "@/assets/logos/sap-logo.png";
+import shipBobLogo from "@/assets/logos/shipbob-logo.png";
+import bigCommerceLogo from "@/assets/logos/bigcommerce-logo.png";
+
 const integrationCategories = [
   {
     category: "3PL Partners",
-    integrations: ["ShipBob", "Fulfillment by Amazon", "Red Stag", "ShipHero", "Flexe"],
+    integrations: [
+      { name: "ShipBob", logo: shipBobLogo },
+      { name: "Fulfillment by Amazon", logo: amazonLogo },
+      { name: "Red Stag", logo: null },
+      { name: "ShipHero", logo: null },
+      { name: "Flexe", logo: null }
+    ],
     color: "bg-primary/10 text-primary"
   },
   {
     category: "Carriers",
-    integrations: ["FedEx", "UPS", "DHL", "USPS", "OnTrac"],
+    integrations: [
+      { name: "FedEx", logo: fedexLogo },
+      { name: "UPS", logo: upsLogo },
+      { name: "DHL", logo: dhlLogo },
+      { name: "USPS", logo: null },
+      { name: "OnTrac", logo: null }
+    ],
     color: "bg-secondary/10 text-secondary-foreground"
   },
   {
     category: "E-commerce Platforms",
-    integrations: ["Shopify", "BigCommerce", "WooCommerce", "Magento", "Amazon"],
+    integrations: [
+      { name: "Shopify", logo: shopifyLogo },
+      { name: "BigCommerce", logo: bigCommerceLogo },
+      { name: "WooCommerce", logo: null },
+      { name: "Magento", logo: null },
+      { name: "Amazon", logo: amazonLogo }
+    ],
     color: "bg-accent/10 text-accent-foreground"
   },
   {
     category: "Order Management",
-    integrations: ["NetSuite", "SAP", "Oracle", "Brightpearl", "ChannelAdvisor"],
+    integrations: [
+      { name: "NetSuite", logo: netSuiteLogo },
+      { name: "SAP", logo: sapLogo },
+      { name: "Oracle", logo: null },
+      { name: "Brightpearl", logo: null },
+      { name: "ChannelAdvisor", logo: null }
+    ],
     color: "bg-success/10 text-success-foreground"
   }
 ];
@@ -45,19 +80,34 @@ const IntegrationsShowcase = () => {
                 <h3 className="text-2xl font-semibold text-foreground mb-6">
                   {category.category}
                 </h3>
-                <div className="flex flex-wrap gap-3">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {category.integrations.map((integration, idx) => (
-                    <Badge 
-                      key={idx} 
-                      variant="secondary" 
-                      className={`${category.color} px-4 py-2 text-sm font-medium`}
+                    <div
+                      key={idx}
+                      className="group bg-white rounded-lg p-4 border border-border hover:shadow-md transition-all duration-300 hover:scale-105"
                     >
-                      {integration}
-                    </Badge>
+                      {integration.logo ? (
+                        <div className="flex items-center justify-center h-12">
+                          <img 
+                            src={integration.logo} 
+                            alt={`${integration.name} logo`}
+                            className="max-h-8 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                          />
+                        </div>
+                      ) : (
+                        <div className="flex items-center justify-center h-12">
+                          <span className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+                            {integration.name}
+                          </span>
+                        </div>
+                      )}
+                    </div>
                   ))}
-                  <Badge variant="outline" className="px-4 py-2 text-sm">
-                    +{Math.floor(Math.random() * 20) + 10} more
-                  </Badge>
+                  <div className="flex items-center justify-center p-4 border-2 border-dashed border-muted rounded-lg">
+                    <span className="text-xs text-muted-foreground font-medium">
+                      +{Math.floor(Math.random() * 20) + 10} more
+                    </span>
+                  </div>
                 </div>
               </CardContent>
             </Card>
