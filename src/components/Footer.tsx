@@ -12,7 +12,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">Interlnk</span>
             </div>
             <p className="text-background/80 mb-6 max-w-md">
-              The 4PL platform that orchestrates your entire e-commerce logistics ecosystem. 
+              The 4PL platform that orchestrates your entire e-commerce logistics ecosystem.
               Connect everything, see everything, optimize everything.
             </p>
             <div className="text-background/60">
@@ -20,7 +20,7 @@ const Footer = () => {
               <p className="mt-2">SOC 2 Type II Certified • GDPR Compliant</p>
             </div>
           </div>
-          
+
           {/* Product Links */}
           <div>
             <h3 className="font-semibold text-background mb-4">Product</h3>
@@ -32,7 +32,7 @@ const Footer = () => {
               <li><a href="#security" className="text-background/80 hover:text-secondary transition-colors">Security</a></li>
             </ul>
           </div>
-          
+
           {/* Company Links */}
           <div>
             <h3 className="font-semibold text-background mb-4">Company</h3>
@@ -41,11 +41,11 @@ const Footer = () => {
               <li><a href="#careers" className="text-background/80 hover:text-secondary transition-colors">Careers</a></li>
               <li><a href="#contact" className="text-background/80 hover:text-secondary transition-colors">Contact</a></li>
               <li><a href="#blog" className="text-background/80 hover:text-secondary transition-colors">Blog</a></li>
-              <li><a href="#support" className="text-background/80 hover:text-secondary transition-colors">Support</a></li>
+              <li><a href="https://i.ytimg.com/vi/zTExQldOTbE/maxresdefault.jpg" className="text-background/80 hover:text-secondary transition-colors">Support</a></li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-background/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex space-x-6 mb-4 md:mb-0">
