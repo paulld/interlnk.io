@@ -19,7 +19,8 @@ import channelAdvisorLogo from "@/assets/logos/channeladvisor-logo.png";
 import shipBobLogo from "@/assets/logos/shipbob-logo.png";
 import redstagLogo from "@/assets/logos/redstag-logo.png";
 import shipheroLogo from "@/assets/logos/shiphero-logo.png";
-import flexeLogo from "@/assets/logos/flexe-logo.png";
+import logiwaLogo from "@/assets/logos/logiwa-logo.png";
+import easieshipLogo from "@/assets/logos/easyship-logo.png";
 
 const integrationCategories = [
   {
@@ -29,7 +30,7 @@ const integrationCategories = [
       { name: "Fulfillment by Amazon", logo: amazonLogo },
       { name: "Red Stag", logo: redstagLogo },
       { name: "ShipHero", logo: shipheroLogo },
-      { name: "Flexe", logo: flexeLogo }
+      { name: "Logiwa", logo: logiwaLogo }
     ],
     color: "bg-primary/10 text-primary"
   },
@@ -40,7 +41,8 @@ const integrationCategories = [
       { name: "UPS", logo: upsLogo },
       { name: "DHL", logo: dhlLogo },
       { name: "USPS", logo: uspsLogo },
-      { name: "OnTrac", logo: ontracLogo }
+      { name: "OnTrac", logo: ontracLogo },
+      { name: "Easyship", logo: easieshipLogo }
     ],
     color: "bg-secondary/10 text-secondary-foreground"
   },
@@ -99,7 +101,7 @@ const IntegrationsShowcase = () => {
                         <img 
                           src={integration.logo} 
                           alt={`${integration.name} logo`}
-                          className="max-h-10 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                          className="max-h-24 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
                         />
                       </div>
                     </div>
