@@ -13,7 +13,7 @@ const Navigation = () => {
           </div>
 
           {/* Navigation Links */}
-          {/* <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             <a href="#platform" className="text-muted-foreground hover:text-foreground transition-colors">
               Platform
             </a>
@@ -23,10 +23,10 @@ const Navigation = () => {
             <a href="#solutions" className="text-muted-foreground hover:text-foreground transition-colors">
               Solutions
             </a>
-            <a href="#company" className="text-muted-foreground hover:text-foreground transition-colors">
+            {/* <a href="#company" className="text-muted-foreground hover:text-foreground transition-colors">
               Company
-            </a>
-          </div> */}
+            </a> */}
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4">
