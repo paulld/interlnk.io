@@ -2,8 +2,8 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import PlatformOverview from "@/components/PlatformOverview";
 import IntegrationsShowcase from "@/components/IntegrationsShowcase";
-import TrustSection from "@/components/TrustSection";
-import CTASection from "@/components/CTASection";
+// import TrustSection from "@/components/TrustSection";
+// import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,8 +14,8 @@ const Index = () => {
         <Hero />
         <PlatformOverview />
         <IntegrationsShowcase />
-        <TrustSection />
-        <CTASection />
+        {/* <TrustSection /> */}
+        {/* <CTASection /> */}
       </main>
       <Footer />
     </div>

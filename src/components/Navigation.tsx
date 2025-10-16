@@ -11,9 +11,9 @@ const Navigation = () => {
             <Link className="h-8 w-8 text-primary" />
             <span className="text-2xl font-bold text-foreground">Interlnk</span>
           </div>
-          
+
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* <div className="hidden md:flex items-center space-x-8">
             <a href="#platform" className="text-muted-foreground hover:text-foreground transition-colors">
               Platform
             </a>
@@ -26,16 +26,19 @@ const Navigation = () => {
             <a href="#company" className="text-muted-foreground hover:text-foreground transition-colors">
               Company
             </a>
-          </div>
-          
+          </div> */}
+
           {/* CTA Buttons */}
           <div className="flex items-center gap-4">
-            <Button variant="ghost" className="hidden sm:inline-flex">
+            <a
+              href="https://api.interlnk.io/control"
+              className="hidden sm:inline-flex text-muted-foreground hover:text-foreground transition-colors"
+            >
               Sign In
-            </Button>
-            <Button className="enterprise-button">
+            </a>
+            {/* <Button className="enterprise-button">
               Get Demo
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

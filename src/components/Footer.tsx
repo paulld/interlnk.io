@@ -27,14 +27,14 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><a href="#platform" className="text-background/80 hover:text-secondary transition-colors">Platform</a></li>
               <li><a href="#integrations" className="text-background/80 hover:text-secondary transition-colors">Integrations</a></li>
-              <li><a href="#api" className="text-background/80 hover:text-secondary transition-colors">API Docs</a></li>
-              <li><a href="#pricing" className="text-background/80 hover:text-secondary transition-colors">Pricing</a></li>
-              <li><a href="#security" className="text-background/80 hover:text-secondary transition-colors">Security</a></li>
+              <li><a href="https://api.interlnk.io/api-docs" className="text-background/80 hover:text-secondary transition-colors">API Docs</a></li>
+              {/* <li><a href="#pricing" className="text-background/80 hover:text-secondary transition-colors">Pricing</a></li> */}
+              {/* <li><a href="#security" className="text-background/80 hover:text-secondary transition-colors">Security</a></li> */}
             </ul>
           </div>
 
           {/* Company Links */}
-          <div>
+          {/* <div>
             <h3 className="font-semibold text-background mb-4">Company</h3>
             <ul className="space-y-3">
               <li><a href="#about" className="text-background/80 hover:text-secondary transition-colors">About</a></li>
@@ -43,15 +43,15 @@ const Footer = () => {
               <li><a href="#blog" className="text-background/80 hover:text-secondary transition-colors">Blog</a></li>
               <li><a href="https://i.ytimg.com/vi/zTExQldOTbE/maxresdefault.jpg" className="text-background/80 hover:text-secondary transition-colors">Support</a></li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <div className="border-t border-background/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex space-x-6 mb-4 md:mb-0">
-              <a href="#privacy" className="text-background/60 hover:text-secondary transition-colors">Privacy Policy</a>
+              {/* <a href="#privacy" className="text-background/60 hover:text-secondary transition-colors">Privacy Policy</a>
               <a href="#terms" className="text-background/60 hover:text-secondary transition-colors">Terms of Service</a>
-              <a href="#cookies" className="text-background/60 hover:text-secondary transition-colors">Cookie Policy</a>
+              <a href="#cookies" className="text-background/60 hover:text-secondary transition-colors">Cookie Policy</a> */}
             </div>
             <div className="text-background/60">
               <p>Built for enterprise logistics at scale</p>
